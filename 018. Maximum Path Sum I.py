@@ -16,7 +16,6 @@ for i in range(N):
     l=np.loadtxt("tri2.txt", dtype=int, usecols=i, skiprows=i)
     if l.size!=1:
         for j in range(l.size):
-            print(j, l, l[j])
             tri[j+i][i]=l[j]            
     else:
         tri[i][i]=l
